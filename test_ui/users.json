@@ -1,0 +1,26 @@
+[
+    {
+        "username": "alyaTest5955",
+        "password": "test@123",
+        "first": "Robert",
+        "last": "Santiago",
+        "address": "20 rue M7",
+        "city": "Rodrig"
+    },
+    {
+        "username": "alyaTest6228",
+        "password": "test@123",
+        "first": "Matthew",
+        "last": "Sherman",
+        "address": "6 rue M7",
+        "city": "Solish"
+    },
+    {
+        "username": "alyaTest2498",
+        "password": "test@123",
+        "first": "Victor",
+        "last": "Soto",
+        "address": "13 rue M7",
+        "city": "Howell"
+    }
+]

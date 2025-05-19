@@ -1,0 +1,42 @@
+[
+    {
+        "username": "alyaTest2918",
+        "password": "test@123",
+        "first": "Karen",
+        "last": "Miller",
+        "address": "1 rue M7",
+        "city": "Port J"
+    },
+    {
+        "username": "alyaTest1222",
+        "password": "test@123",
+        "first": "Jesse",
+        "last": "Allen",
+        "address": "16 rue M7",
+        "city": "Thomps"
+    },
+    {
+        "username": "alyaTest6176",
+        "password": "test@123",
+        "first": "Phyllis",
+        "last": "Stanley",
+        "address": "20 rue M7",
+        "city": "South "
+    },
+    {
+        "username": "alyaTest4276",
+        "password": "test@123",
+        "first": "Robert",
+        "last": "Richards",
+        "address": "9 rue M7",
+        "city": "Wilson"
+    },
+    {
+        "username": "alyaTest4385",
+        "password": "test@123",
+        "first": "William",
+        "last": "Howard",
+        "address": "2 rue M7",
+        "city": "Gutier"
+    }
+]
