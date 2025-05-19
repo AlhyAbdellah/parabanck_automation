@@ -1,0 +1,37 @@
+name : CI Parabanck Automation
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout du code
+      uses: actions/checkout@v3
+      
+    - name: Installer Python
+      uses: actions/setup-python@v4
+      with:
+        python-virsion: '3.10'
+        
+    - name: Installer les dépendances
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pytest-html
+        
+    - name: Lancer les tests Pytest with report
+      run: |
+        pytest -s test_ui/page_headless.py --html=report.html --self-contained-html || true
+    - name: Upload artifacts (HTML report & screenshots)
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-artifacts
+        path: |
+          report.html
+          screenshot.png
+      
