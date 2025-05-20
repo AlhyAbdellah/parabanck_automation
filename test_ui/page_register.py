@@ -95,6 +95,7 @@ class register():
     def register_check(self):
         msg = self.wait.until(EC.visibility_of_element_located((By.XPATH, "//h1[contains(text(),'Welcome')]"))
         )
+        self.driver.save_screenshot("screenshot.png")
         assert "Welcome" in msg.text,"Register failed"
         print("Rigister passed.")
         WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.LINK_TEXT, "Transfer Funds")))

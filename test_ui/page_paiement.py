@@ -17,7 +17,7 @@ class paiement():
         self.trensfer=(By.XPATH,"//input[@value='Transfer']")
     
     def transfert_funds(self):
-        
+
         print("✅ Current page:", self.driver.current_url)
         print("✅ Trying to click 'Transfer Funds'...")
         link = self.wait.until(EC.presence_of_element_located(self.transfer_fund))
@@ -36,6 +36,7 @@ class paiement():
     def check_transfert(self):
         try:
             confirmation = self.wait.until(EC.presence_of_element_located((By.XPATH,"//h1[@class='title'and contains(text(),'Transfer Complete!')]")))
+            self.driver.save_screenshot("screenshot.png")
             assert "Transfer Complete!" in confirmation.text 
             print("Transfert succed")
         except Exception:

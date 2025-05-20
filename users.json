@@ -38,5 +38,21 @@
         "last": "Howard",
         "address": "2 rue M7",
         "city": "Gutier"
+    },
+    {
+        "username": "alyaTest9392",
+        "password": "test@123",
+        "first": "James",
+        "last": "Singh",
+        "address": "12 rue M7",
+        "city": "Felici"
+    },
+    {
+        "username": "alyaTest6024",
+        "password": "test@123",
+        "first": "Julie",
+        "last": "Miller",
+        "address": "1 rue M7",
+        "city": "Louist"
     }
 ]
