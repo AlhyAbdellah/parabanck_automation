@@ -23,13 +23,12 @@ import pytest
 
 #     driver.quit()
 
-def test_register(driver):
+def test_register_paiement(driver):
     reg=register(driver)
     reg.full_info()
     reg.safe_click()
     reg.register_check()
 
-def test_paiement(driver):
     pay=paiement(driver)
     pay.transfert_funds()
     print("🕒 Waiting for page to be ready before clicking 'Transfer Funds'")
