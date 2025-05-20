@@ -16,7 +16,7 @@ jobs:
     - name: Installer Python
       uses: actions/setup-python@v4
       with:
-        python-virsion: '3.10'
+        python-version: '3.10'
         
     - name: Installer les dépendances
       run: |
