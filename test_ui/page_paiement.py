@@ -18,8 +18,13 @@ class paiement():
     
     def transfert_funds(self):
 
+        self.wait.until(EC.visibility_of_element_located((By.LINK_TEXT, "Log Out")))
+
         print("✅ Current page:", self.driver.current_url)
         print("✅ Trying to click 'Transfer Funds'...")
+
+        time.sleep(10)
+        
         link = self.wait.until(EC.presence_of_element_located(self.transfer_fund))
         self.driver.execute_script("arguments[0].scrollIntoView(true);", link)
         self.driver.execute_script("arguments[0].click();", link)
