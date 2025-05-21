@@ -45,7 +45,7 @@ jobs:
         username: ${{ secrets.MAIL_USERNAME }}
         password: ${{ secrets.MAIL_PASSWORD }}
         subject: ✅ Rapport de tests Parabanck
-        to: "team@example.com"
+        to: "abdellah.alhyan98@gmail.com"
         from: "CI Bot <noreply@example.com>"
         body: |
           Bonjour 👋,
