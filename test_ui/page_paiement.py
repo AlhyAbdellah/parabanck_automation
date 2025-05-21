@@ -18,8 +18,8 @@ class paiement():
     
     def transfert_funds(self):
 
-        self.driver.save_screenshot("screenshot1.png")
-        
+        self.driver.save_screenshot("screenshot.png")
+
         self.wait.until(EC.visibility_of_element_located((By.LINK_TEXT, "Log Out")))
 
         print("✅ Current page:", self.driver.current_url)
